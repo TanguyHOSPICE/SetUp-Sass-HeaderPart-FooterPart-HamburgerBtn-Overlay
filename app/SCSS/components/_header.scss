@@ -1,0 +1,78 @@
+@use '../util' as u;
+
+.header {
+	background-color: var(--color-lt-white);
+
+	&__wrapper {
+		&.open {
+			.header__toggle {
+				> span:first-child {
+					transform: rotate(45deg);
+				}
+
+				> span:nth-child(2) {
+					opacity: 0;
+				}
+
+				> span:last-child {
+					transform: rotate(-45deg);
+				}
+			}
+
+			.overlay {
+				opacity: 0;
+				position: fixed;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				left: 0px;
+				background-image: linear-gradient(gray, transparent);
+			}
+		} //****Finish open class
+
+		/* @include u.breakpoint-down(medium) {
+			> nav {
+				display: none;
+			}
+		} */
+	}
+	&__logo {
+		width: u.rem(45);
+
+		// ! dev tool Remember to use breakpoints for a logo here when >= 1110px
+		/* @media (width >= u.rem(1110) {
+            width: u.rem(64);
+        } */
+	}
+
+	&__link {
+		// ! dev tool styling mobile first
+		color: var(--color-dk-black);
+		margin-right: 13px;
+
+		// font-size: u.rem(18);
+		// line-height: 1.3;
+
+		/* @media (width >= u.rem(1110) {
+			font-size: var(--f-body);
+			color: var(--c-...);
+		} */
+	}
+
+	&__toggle {
+		// Mobile Menu Toggle
+
+		> span {
+			display: block;
+			width: 26px;
+			height: 2px;
+			background-color: var(--color-dk-black);
+			transition: all 300ms ease-in-out;
+			transform-origin: 3px 1px;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

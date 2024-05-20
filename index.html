@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon"
+        href="./assets/images/favicon-32x32.png" />
+
+  <title>Change Title</title>
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="./dist/style.css">
+
+  <!-- JS -->
+  <script type="module"
+          src="./app/JS/script.js"
+          defer></script>
+
+  <!-- Google Fonts (to use in globals/fonts file) -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+  <!-- fontAwesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+
+
+    <div class="header__wrapper flex flex-jc-sb flex-ai-c wrapper">
+      <a href="/">
+        <img class="header__logo "
+             src=""
+             alt="logo">
+      </a>
+      <nav class="header__links hide-for-mobile">
+        <ul class="flex flex-jc-c flex-ai-c">
+          <li>
+            <a class="header__link"
+               href="#">Home</a>
+          </li>
+          <li>
+            <a class="header__link"
+               href="">Link1</a>
+          </li>
+          <li>
+            <a class="header__link"
+               href="">Link2</a>
+          </li>
+          <li>
+            <a class="header__link"
+               href="">Link3</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a id="btnHamburger"
+         href="#"
+         class="header__toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+    <!-- Mobil overlay -->
+    <div class="overlay has-fade"></div>
+    <!-- Mobil Links -->
+    <div class="header__menu flex flex-dir-col flex-ai-c flex-jc-c has-fade">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">Blog</a>
+      <a href="">Careers</a>
+    </div>
+
+
+  </header>
+  <main class="wrapper"></main>
+  <footer class="footer wrapper">
+    <div class="footer__links">
+      <a href="#">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+    <p>&copy;HT 2024</p>
+  </footer>
+</body>
+
+
+</html>

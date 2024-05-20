@@ -1,0 +1,6 @@
+//!link files for using it inside the style.scss
+@forward 'boilerplate';
+@forward 'typography';
+@forward 'colors';
+@forward 'variables'; // ! not necessary required
+// @forward 'containers'; // ! not necessary required
